@@ -1,40 +1,25 @@
-<template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        Rencontrez les codeurs
-      </h1>
-      <h2 class="subtitle">
-        Une App pour gérer les codeurs,
-        <br />une App pour rencontrer des codeurs
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+<template lang="pug">
+  .container
+    div
+      Logo
+      h1.title
+        | Rencontrez les codeurs
+      h2.subtitle
+        | Une App pour gérer les codeurs,
+        br
+        | une App pour rencontrer des codeurs
+      .links
+        a.button--green(href='#', target='_self') Find Coders
+        a.button--grey(href='#', target='_self') Find Coders by languages
 
-      <h1 class="coder-list">
-        Tous les codeurs
-      </h1>
+      h1.coder-list
+        | Tous les codeurs
+      .coder-container
+        .blank
+        .coder-info
+          h3 Coder Name
+          p Future coder description can go here.
 
-      <div class="coder-container">
-        <div class="blank"></div>
-        <div class="coder-info">
-          <h3>Coder Name</h3>
-          <p>Future coder description can go here.</p>
-        </div>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script>
